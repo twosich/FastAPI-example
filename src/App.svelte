@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
 
-  const url = "https://fastapi-learning-yezd.onrender.com";
+  const url = "https://1339-2802-8013-c367-8c01-1d2d-3b18-92a4-29bf.ngrok-free.app/";
 
   export async function usersList(){
       let response = await fetch('${url}/users/');
@@ -13,7 +13,7 @@
   return await response.json();
 }
 
-  let users = {};
+  let users = [];
   let searchName = '';
   let foundUser = null;
 
